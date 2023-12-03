@@ -1,0 +1,13 @@
+{
+  "name": "aoc2023",
+  "version": "1.0.0",
+  "description": "Advent of Code 2023 solutions",
+  "author": "Ian Jones",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier days/* --write"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0"
+  }
+}
