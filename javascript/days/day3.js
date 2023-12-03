@@ -81,7 +81,6 @@ function pt2(input) {
 function getGridCoordinatesForPattern(pattern, input) {
   const lines = input.split("\n");
   const lineSize = lines[0].length + 1; // plus one for newlines
-  const lineCount = lines.length;
   return [...input.matchAll(pattern)].map((e) => {
     const coord = {
       start: e.index,
