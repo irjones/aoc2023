@@ -1,6 +1,6 @@
 module.exports = {
   run: function () {
-    const inputLines = require('./getInput').read("../input/day1").split("\n");
+    const inputLines = require("./getInput").read("../input/day1").split("\n");
     console.log("Day 1");
     console.log({
       pt1: inputLines.map(pt1).reduce((acc, next) => acc + next),

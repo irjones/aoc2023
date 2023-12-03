@@ -1,5 +1,5 @@
 module.exports = {
-// TODO: get existing solution from other machine
+  // TODO: get existing solution from other machine
   run: function () {
     console.log("Day 2");
     console.log({
