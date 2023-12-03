@@ -1,3 +1,20 @@
+/**
+ * Explanation
+ * - Parse numbers and symbols into a coordinate object that
+ *   - has the absolute start and end indexes (within the input string) of the item
+ *   - has the relative start and end indexes (within the given line it occurs) of the item
+ *   - has the absolute indexes of all input characters around the item, with respect to the item length
+ * - Pt 1: Find all numbers with adjacent symbols
+ *  - create a set of symbol indexes
+ *  - for each number, check neighbors until one of them is a symbol index or all neighbors are checked
+ *  - add together all numbers where at least one neighbor was a symbol
+ * - Pt 2: Find all gears (asterisk symbol touching exactly 2 numbers)
+ *  - create a map of absolute number position indexes to the number value
+ *  - for each asterisk, check all neighbor indexes against the map of number indexes, putting their values in a set if relevant
+ *  - if the set of values has exactly 2 entries, multiply the entries together and add them to a match collection
+ *  - get the sum of the match collection
+ */
+
 module.exports = {
   run: function () {
     const input = require("./getInput").read("../input/day3");
