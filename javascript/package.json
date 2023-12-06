@@ -5,7 +5,8 @@
   "author": "Ian Jones",
   "license": "MIT",
   "scripts": {
-    "format": "prettier days/* --write"
+    "format": "prettier days/* --write",
+    "day5": "node main.js 5"
   },
   "devDependencies": {
     "eslint": "^8.55.0",
