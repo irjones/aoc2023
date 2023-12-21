@@ -9,7 +9,7 @@ module.exports = {
 }
 
 function isInRangeInclusive(n, lower, upper) {
-    return n >= lower && n <= upper;
+    return n >= lower && n < upper;
 }
 
 function inputToMaps(input) {
